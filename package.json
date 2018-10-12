@@ -1,25 +1,14 @@
 {
-  "name": "fake-useragent",
-  "version": "0.0.1",
-  "description": "generate a fake userAgent for bypass guys",
+  "name": "random-fake-user-agent",
+  "version": "1.0.0",
+  "description": "generate a random fake userAgent for bypass guys",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "pub": "npm run test && npm run npmUp && npm run git",
+		"npmUp": "npm version patch && npm publish",
+		"git": "git push && git push --tags"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chinanf-boy/random-fake-user-agent.git"
-  },
-  "keywords": [
-    "userAgent",
-    "fake",
-    "nodejs",
-    "npm"
-  ],
-  "author": "chinanf-boy",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/chinanf-boy/random-fake-user-agent/issues"
-  },
-  "homepage": "https://github.com/chinanf-boy/random-fake-user-agent#readme"
+  "author": "yobrave",
+  "license": "Apache-2.0"
 }
